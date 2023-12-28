@@ -1,20 +1,3 @@
-/*validacion del formulario*/
-const nombre = document.getElementById("name")
-const surname = document.getElementById("surname")
-const email = document.getElementById("email")
-const commment = document.getElementById("comment")
-const parrafo = document.getElementById("warnings")
-
-form.addEventListener("submit", e=>{
-    e.preventDefault()
-    let warnings = ""
-    if (nombre.ariaValueMax.length <8){
-        warnings += `El nombre no es valido`
-        
-    }
-})
-
-
 /*boton de ir arriba*/
 window.onscroll = function(){
 
@@ -34,3 +17,25 @@ window.scrollTo({
 
 });
 });
+
+/*validación del formulario*/
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
