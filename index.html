@@ -4,21 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Landing Page de Caroline Sada, una influencer financiera">
+  <meta name="theme-color" content="#317EFB"/>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/c21e2c2f2d.js" crossorigin="anonymous"></script>
-
   <title>Caroline Sada</title>
+  <!--link bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="shortcut icon" href="Assets/img/favicon-32x32.png" type="image">
+  <!--link icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--link favicon-->
+    <link rel="shortcut icon" href="Assets/img/favicon.ico">
+  </head>
 
-</head>
-
-<body class="font-monospace">
+<body class="font-monospace bg-secundary-50">
   <!--Encabezado-->
   <header class="justify-content-center">
-
-    <nav class="navbar navbar-expand-lg fixed-top" style="background: hsla(148, 100%, 47%, 1);
+   <nav class="navbar navbar-expand-lg fixed-top" style="background: hsla(148, 100%, 47%, 1);
 
     background: linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
     
@@ -26,132 +28,124 @@
     
     background: -webkit-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#i'm" style="color: aliceblue;">Caroline Sada</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white fw-semibold fs-4" href="#home"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caroline sada</font></font></a>
+        
+        <!--botón del nav-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Navegación de palanca">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: flex; justify-content: end;">
-            <li class="nav-item ">
-              <a class="nav-link"  href="#home">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#i'm">Quien soy?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#course">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacto</a>
-            </li>
-          </ul>
+        <!--offcanvas-->
+        <div class="offcanvas offcanvas-end" style="background: rgb(97, 235, 161)" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+          <div class="offcanvas-header" style="border-bottom:0.5px solid black;">
+            <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caroline Sada</font></font></h5>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!--Link-->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item p-3 py-md-1">
+                <a class="nav-link text-black" href="#home">Inicio</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a class="nav-link text-black" href="#course">Cursos</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a class="nav-link text-black" href="#testimonial">Testimonios</a>
+              </li>
+              <li class="nav-item p-3 py-md-1">
+                <a class="nav-link text-black" href="#contact">Contacto</a>
+              </li>
+              </ul>
+            </div>
+
+            <!--iconos redes sociales-->
+          <div class="d-lg-none align-self-center py-3">
+              <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok px2 text-black fs-2"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram px2 text-black fs-2"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook px2 text-black fs-2"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin px2 text-black fs-2"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter px2 text-black fs-2"></i></a>
+              </div>
         </div>
       </div>
     </nav>
   </header>
   <main>
     <!--Inicio-->
-    <section class=" align-items-center d-flex justify-content-center" id="home" style="min-height: 100vh;">
+    <section class="d-flex justify-content-center" id="home" style="min-height: 100vh;">
       <div class="container mt-5 mb-5">
         <div class="row align-items-center g-5 py-5">
           <div class="col-md-6">
-          
-              <img src="Assets/img/img2.jpg" class="img-fluid d-block mx-auto rounded-circle" alt="Caroline Sada">
-          
+            <img src="Assets/img/Caroline Sada.jpg" class="img-fluid d-block " style="border-radius: 12% 56% 48% 36% / 0% 37% 47% 58%"  alt="Caroline Sada">
           </div>
           <div class="col-md-6">
-            
-            <h1 class=" p-3" style="font-size: 50px; text-align: center;">¡Conviérte en un experto en Finanzas!</h1>
-
-            <p class=" text-center fs-5">Inscripciones abiertas para los cursos digitales.</p>
-            <p class="text-center fs-5">¿Y vos que estas esperando?</p>
-
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-            <a href="#contact" class="btn btn-primary btn-lg px-4 me-md-2"
-                style="background: hsla(211, 90%, 47%, 1) 100% ; border: none;cursor: pointer;">Inscríbite ya!</a>
-            
+            <h1 class=" display-2 text-uppercase" style=" text-align: center;">¡Conviérte en un experto en Finanzas!</h1>
+            <p class=" text-center fs-5 "><em>Inscripciones abiertas para los cursos digitales.</em></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center p-4">
+            <a href="#contact" class="btn btn-lg px-4 me-md-2" style="background-color: hsla(148, 100%, 47%, 1);
+            background: linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+            background: -moz-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+            background: -webkit-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%); border: none;cursor: pointer;">Inscríbite ya!</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!--quien soy-->
-    <section class="align-items-center d-flex justify-content-center"   id="i'm" style="min-height: 100vh;">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-12 p-2">
-            <h1 class="text-center p-5 m-2" style="font-size: 40px;">Hola! Soy Caroline Sada</h1>
-            <p class="text-center" style="font-size: 25px;">Licenciada en Administración y Dirección de
-              Empresas, tengo 34 años y soy una influencer financiera, rubro en el que me desempeño como analista desde
-              hace
-              tres años.
-              Mi creatividad ha llevado a generar contenido de valor para redes sociales, donde doy consejos y enseño
-              conceptos de finanzas a emprendedores.
-              Por lo que he aprovechado mis conocimientos y liderazgo en redes para traerles unos cursos digitales para
-              ayudar a mis seguidores con las finanzas de sus emprendimientos
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!--cursos-->
-    <section class="align-items-center " id="course" style="min-height: 100vh;">
-      
-          <div class="container">
-            <h1 class="text-center" style="font-size: 45px;">Nuestros cursos</h1>
+    <section class="align-items-center " id="course">
+      <div class="container">
+            <h1 class="text-center display-3">Nuestros cursos</h1>
             <hr style="border: 2px solid hsla(211, 90%, 47%, 1);">
-      <div class="row g-2 py-5 row-cols-1 row-cols-lg-3 d-flex justify-content-center">
-          
+      <div class="row py-5 row-cols-1 row-cols-lg-3 d-flex justify-content-center">
           <!--cards-->
-          <!--Basico-->
-          <div class="col-md-6 p-2">
+          <!--CURSO Basico-->
+          <div class="col-md-6 p-2" >
             <div class="m-2 p-2">
-              <div class="card">
-                <img src="Assets/img/curso1.jpg" class="card-img-top" alt="basico">
+              <div class="card text-center">
+                <img src="Assets/img/curso1.jpg" class="card-img-top" style="border-radius:46% 43% 49% 47% / 0% 0% 19% 21% ;" alt="basico">
                 <div class="card-body">
-                  <h5 class="card-title">Introducción a la finanzas</h5>
-                  <p class="card-text">Se tratarán conceptos claves y herramientas de valor del dinero en el tiempo que
-                    ayudarán a entender las diferentes tasa de interes y a evaluar,comprar y elegir proyectos de
-                    inversión y financiamiento en los mercados financieros.</p>
-                  <a href="#" class="btn btn-primary">COMPRAR CURSO</a>
+                  <h3 class="card-title ">Introducción a la finanzas</h3>
+                  <p class="card-text">Se tratarán conceptos claves y herramientas de valor del dinero,podrás comprar y elegir proyectos de
+                    inversión en los mercados financieros.</p>
+                  <a href="#" class="btn" style="background-color: hsla(148, 100%, 47%, 1);
+                  background: linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                  background: -moz-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                  background: -webkit-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);">COMPRAR CURSO</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--Intermedio-->
+        <!-- CURSO Intermedio-->
           <div class="col-md-6 p-2">
             <div class="m-2 p-2">
-              <div class="card">
-                <img src="Assets/img/curso2.jpg" class="card-img-top" alt="basico">
+              <div class="card text-center">
+                <img src="Assets/img/curso2.jpg" class="card-img-top" style="border-radius:46% 43% 49% 47% / 0% 0% 19% 21% " alt="intermedio">
                 <div class="card-body">
-                  <h5 class="card-title">Inteligencia financiera</h5>
-                  <p class="card-text">Aprenderas hacer que tu capital se multiplique, conoceras las mejores
-                    inversiones.Podras aumentar tus ingresos y así construir capital para llegar a la libertad
-                    financiera o retiro para disfrutar sin obligación de trabajar</p>
-                  <a href="#" class="btn btn-primary">COMPRAR CURSO</a>
+                  <h3 class="card-title ">Inteligencia financiera</h3>
+                  <p class="card-text"> Lograrás que tu capital se multiplique, conocerás las mejores
+                    inversiones.Asi podras aumentar tus ingresos y construir un capital para llegar a la libertad
+                    financiera.</p>
+                  <a href="#" class="btn" style="background-color: hsla(148, 100%, 47%, 1);
+                  background: linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                  background: -moz-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                  background: -webkit-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%)">COMPRAR CURSO</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--Avanzado-->
+        <!-- CURSO Avanzado-->
           <div class="col-md-6 p-2">
             <div class="m-2 p-2">
-              <div class="card">
-                <img src="Assets/img/curso3.avif" class="card-img-top" alt="basico">
+              <div class="card text-center">
+                <img src="Assets/img/curso3.jpg" class="card-img-top" style="border-radius:46% 43% 49% 47% / 0% 0% 19% 21% " alt="avanzado">
                 <div class="card-body">
-                  <h5 class="card-title">Invertir en mercados financieros</h5>
-                  <p class="card-text">Te prepararás para invertir en los mercados, leerás la Psicología del mercado y
-                    la información contenida en los gráficos.
-                    Elaboraras un plan de trading para obtener un mejor</p>
-                  <a href="#" class="btn btn-primary">COMPRAR CURSO</a>
+                  <h3 class="card-title ">Invertir en mercados financieros</h3>
+                  <p class="card-text ">Te prepararás para invertir en los mercados, leerás la Psicología del mercado y
+                    la información contenida en los gráficos.</p>
+                  <a href="#" class="btn" style="background-color: hsla(148, 100%, 47%, 1);
+                  background: linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                  background: -moz-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                  background: -webkit-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%)">COMPRAR CURSO</a>
                 </div>
               </div>
             </div>
@@ -159,23 +153,19 @@
         </div>
       </div>
     </section>
-
-
     <!--testimonios-->
-    <section class="d-flex justify-content-center" id="testimonial">
+    <section class="d-flex justify-content-between" id="testimonial" style="min-height: 100vh;">
       <div class="container">
         <div class="row ">
-          <h1 class="text-center p-5 fs-1">Más de 10000 alumnos y casos de éxito</h1>
-          <p class="text-center fs-3">Aquí puedes ver los testimonios de algunos de ellos</p>
+          <h1 class="text-center p-5 display-5">Más de 10000 alumnos y casos de éxito</h1>
+          <h2 class="text-center"><em>Aquí puedes ver los testimonios de algunos de ellos</em></h2>
           <!--card t1-->
           <div class="col p-2 ">
             <div class="m-2 p-2">
-              <div class="card">
+              <div class="card text-center shadow border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Alberto Lell</h5>
-                  <p class="card-text"><i class="fa-solid fa-quote-left"></i> Ha sido una inyección de ayuda
-                    alucinante. Hacer todos los cursos es una de las mejores inversiones que hecho en mi vida <i
-                      class="fa-solid fa-quote-right"></i></p>
+                  <h3 class="card-title">Alberto Lell</h3>
+                  <p class="card-text"><i class="bi bi-quote"></i>Hacer todos los cursos es una de las mejores inversiones que hecho en mi vida.<i class="bi bi-quote"></i></p>
                 </div>
               </div>
             </div>
@@ -183,12 +173,11 @@
           <!--card t2-->
           <div class="col  p-2 ">
             <div class="m-2 p-2" >
-              <div class="card">
+              <div class="card text-center shadow border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Yamila Álvarez</h5>
-                  <p class="card-text" style="font-size: 12px;"><i class="fa-solid fa-quote-left"></i> Realmente es un placer haber realizado
-                    este curso pues la información no solo es bastante completa sino que la explicación es sumamente
-                    comprensible y con un lenguaje ideal <i class="fa-solid fa-quote-right"></i></p>
+                  <h3 class="card-title">Yamila Álvarez</h3>
+                  <p class="card-text"><i class="bi bi-quote"></i>La información es bastante completa y la explicación es sumamente
+                    comprensible con un lenguaje ideal.<i class="bi bi-quote"></i></p>
                 </div>
               </div>
             </div>
@@ -196,12 +185,10 @@
           <!--card t3-->
           <div class="col p-2 ">
             <div class="m-2 p-2">
-              <div class="card">
+              <div class="card text-center shadow border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Clara Medina</h5>
-                  <p class="card-text"><i class="fa-solid fa-quote-left"></i> ¡Estoy emocionada!
-                    Estaba perdida.Ha sido un antes y despues, me ha revolucionado mi forma de aprender <i
-                      class="fa-solid fa-quote-right"></i></p>
+                  <h3 class="card-title">Clara Medina</h3>
+                  <p class="card-text"><i class="bi bi-quote"></i>¡Estoy emocionada!Ha sido un antes y despues, me ha revolucionado mi forma de aprender.<i class="bi bi-quote"></i></p>
                 </div>
               </div>
             </div>
@@ -209,11 +196,11 @@
           <!--card t4-->
           <div class="col p-2 ">
             <div class="m-2 p-2" >
-              <div class="card">
+              <div class="card text-center shadow border-0 ">
                 <div class="card-body">
-                  <h5 class="card-title">Victor Adrian</h5>
-                  <p class="card-text"><i class="fa-solid fa-quote-left"></i> Caroline es una tia espectacular, siempre
-                    contesta rápido y es súper responsable <i class="fa-solid fa-quote-right"></i></p>
+                  <h3 class="card-title">Victor Adrian</h3>
+                  <p class="card-text"><i class="bi bi-quote"></i> Caroline es una tia espectacular, siempre
+                    contesta rápido y es súper responsable.<i class="bi bi-quote"></i></p>
                 </div> 
               </div>
             </div>
@@ -221,11 +208,11 @@
           <!--card t5-->
           <div class="col  p-2 ">
             <div class="m-2 p-2">
-              <div class="card">
+              <div class="card text-center shadow border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Astrid Lara</h5>
-                  <p class="card-text"><i class="fa-solid fa-quote-left"></i> Muy buenos cursos, temas muy puntuales y
-                    bien explicados <i class="fa-solid fa-quote-right"></i></p>
+                  <h3 class="card-title">Astrid Lara</h3>
+                  <p class="card-text"><i class="bi bi-quote"></i> Muy buenos cursos, temas muy puntuales y
+                    bien explicados.¡La recomiendo!<i class="bi bi-quote"></i></p>
                 </div>
               </div>
             </div>
@@ -233,11 +220,11 @@
           <!--card t6-->
           <div class="col  p-2 ">
             <div class="m-2 p-2">
-              <div class="card">
+              <div class="card text-center shadow border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Constanza Diaz</h5>
-                  <p class="card-text"><i class="fa-solid fa-quote-left"></i> Caroline es la mejor! Super recomiendo sus
-                    cursos <i class="fa-solid fa-quote-right"></i></p>
+                  <h3 class="card-title">Constanza Diaz</h3>
+                  <p class="card-text"><i class="bi bi-quote"></i> Estaba perdida..Super recomiendo sus
+                    cursos. <i class="bi bi-quote"></i></p>
                 </div>
               </div>
             </div>
@@ -245,16 +232,13 @@
         </div>
       </div>
     </section>
-
     <!--contacto-->
-    <section id="contact">
-      <div class="container">
+    <section id="contact" style="min-height: 100vh;">
+      <div class="container p-4">
         <div class="row d-flex justify-content-around">
-
-          <div class="col-md-6 p-2">
+          <div class="col-md-6 p-2" style="border:double rgb(113, 172, 235);border-radius: 20px;">
             <div class="m-2 p-2">
-              <form class="row mt-3 g-3 needs-validation" novalidate
-                style="box-shadow: 0 0 10px hsla(211, 90%, 47%, 1);">
+              <form class="row needs-validation" novalidate>
                 <h2 class="text-center">¡Inscríbete ahora!</h2>
                 <div class="col-md-6">
                   <label for="validationCustom01" class="form-label fs-5 p-1">Nombre</label>
@@ -279,8 +263,8 @@
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <label class="fs-5">Dejanos tu mensaje</label>
-                  <textarea class="form-control"> </textarea>
+                  <label  for="text" class="fs-5">Dejanos tu mensaje</label>
+                  <textarea id="text" name="text" class="form-control"> </textarea>
                 </div>
                 <div class="col-md-12">
                   <div class="form-check">
@@ -291,69 +275,58 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary w-100"
-                    style="background-color:hsla(211, 90%, 47%, 1);border: none; padding: 2px; height: 3rem;">Si,
+                  <button type="submit" class="btn w-100"
+                    style="background-color:hsla(148, 100%, 47%, 1);
+
+                    background: linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                    
+                    background: -moz-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+                    
+                    background: -webkit-linear-gradient(225deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);border: none; padding: 2px; height: 3rem;">Si,
                     quiero!</button>
                 </div>
               </form>
             </div>
           </div>
-
-
-          <div class="col-md-6 p-2" style="width: 25rem;">
+          <div class="col-md-4 p-2 shadow h-75">
             <div class="m-2 p-2">
-
-              <h2 class="data">Contáctenos</h2>
+              <h4 class="data">Contáctenos</h4>
               <hr style="border: 2px solid hsla(211, 90%, 47%, 1);">
-              <h4 class="data"><img class="direccion" src="Assets/img/maps-flags_447031 (1).png" alt=""> Dirección</h4>
+              <h5 class="data"><i class="bi bi-geo-alt"></i> Dirección</h5>
               <p>Av. Perú 505.Barrio Sur</p>
-              <h4 class="data"><img class="telefono" src="Assets/img/phone-call_597177.png" alt=""> Telefóno</h4>
+              <h5 class="data"><i class="bi bi-telephone"></i> Telefóno</h5>
               <p>+(542)0800-555-3245</p>
-              <h4 class="data"><img class="whatsapp" src="Assets/img/whatsapp_2111774.png" alt=""> Whatsapp</h4>
+              <h5 class="data"><i class="bi bi-whatsapp"></i> Whatsapp</h5>
               <p>+(542) 15536895</p>
             </div>
           </div>
         </div>
       </div>
-
     </section>
-
     <!--boton ir arriba-->
     <div class="scroll-top-container">
       <div class="scroll-top-button">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="bi bi-arrow-up"></i>
       </div>
     </div>
   </main>
 
-  <footer>
-
-    <div class="container-fluid ">
-
-      <div class="row p-2 bg-black text-white d-flex justify-content-between">
-        <div class="col-md-8 d-flex justify-content-start">
-          <p style="font-size: 1rem;"> &copy; Caroline Sada 2023 | Todos los derechos reservados </p>
+  <footer class=" container-fluid bg-black text-white p-2 d-flex  justify-content-between" >
+        <div>
+          <p class="fs-6"> Todos los derechos reservados | &copy; Caroline Sada 2024  </p>
         </div>
-        <div class="col-md-4 d-flex justify-content-end">
-          <a href="https://www.tiktok.com/" target="_blank" style="color: aliceblue;padding: 5px;"><i
-              class="fa-brands fa-tiktok"></i></a>
-          <a href="https://www.instagram.com/" target="_blank" style="color: aliceblue;padding: 5px;"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/" target="_blank" style="color: aliceblue;padding: 5px;"><i
-              class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/" target="_blank" style="color: aliceblue; padding: 5px;"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.twitter.com/" target="_blank" style="color: aliceblue; padding: 5px;"><i
-              class="fa-brands fa-twitter"></i></a>
+       <div>
+          <a href="https://www.tiktok.com/" target="_blank" style="color:white;padding: 4px;"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" style="color: white;padding: 4px;"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" style="color:white;padding: 4px;"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" style="color: white;padding: 4px;"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" ; style="color: white;padding: 4px;"><i class="bi bi-twitter"></i></a>
         </div>
-      </div>
-    </div>
+      
   </footer>
-
-  <script src="main.js"></script>
+<script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

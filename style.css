@@ -1,40 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
 }
-
 body{
     font-family: 'Roboto Slab' serif;
-    
+    min-height: 100vh;
 }
 
 html{
     scroll-behavior:smooth;
 }
 
-
-
-
-    /*Menu*/
- #menu a {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-#menu button{
-        font-size: 18px;
-        font-weight: bold;
-    }
 /*seccion 2*/
 .card:hover{
     box-shadow: 0 0 15px;
-   transform: 2s ease;
-}
-
-.card-body{
-    height: 325px;
-    text-align: center;
+    transform: 2s ease;
 }
 
 .card-body a{
@@ -42,49 +22,13 @@ html{
     border: none;
     text-decoration: none;
 }
-
 .card-body a:hover{
     background-color: hsla(148, 100%, 47%, 1) ;
-
 }
 
-.card-title{
-    font-size: 25px;
-}
-
-.card-text{
-    font-size: 15px;
-}
-
-
-/*section 4*/
-
+/*sección 4*/
 form{
-    border-radius: 10px;
-    height: 700px;
-}
-form div{
-    font-size: 30px;
-    text-align: left; 
-}
-.data{
-    padding: 10px;
-}
-.data h2{
-    margin: 5px;
-    text-align:center;
-    font-size: 50px;
-    letter-spacing: 3px;
-    color:hsla(211, 90%, 47%, 1);
-}
-
-.data h4{
-    font-size: 20px;
-    text-align: center;
-}
-
-.direccion, .telefono, .whatsapp{
-    height: 15px;
+    height: 600px;
 }
 
 /*boton de arriba*/
@@ -96,7 +40,6 @@ form div{
     height: 2rem;
     z-index: -1;
 }
-
 .scroll-top-button{
     width:0rem ;
     height:0rem;
@@ -109,7 +52,6 @@ form div{
     transform:translate(-50%, -50%) ;
     z-index: -1;
 }
-
 .scroll-top-button i{
     position: absolute;
     font-size: 1.7rem;
@@ -119,35 +61,43 @@ form div{
     color: rgb(21, 20, 20);
     transition: .2s;
 }
-
 .show{
     z-index: 10;
 }
-
 .show .scroll-top-button{
     animation: popop .3s ease ease-in-out;
     width: 3rem;
     height: 3rem;
     z-index: 1;
 }
-
 .show i{
     transform: translate(-50%, -50%) scale(1);
 }
-
 @keyframes popop{
     0%{
         width: 0rem;
         height: 0rem;
-
-    }
+}
     50%{
        width: 8rem;
        height: 8rem; 
-    }
+}
     100%{
         width: 6.6rem;
         height: 6.6rem;
+}
+}
+
+@media (max-width:768px){
+    .navbar-nav > li:hover{
+        background-color: rgb(62, 146, 236);
+        border-radius: 60px;
     }
 }
 
+
+@media (max-width:768px){
+    footer a {
+        display: none;
+      }
+}

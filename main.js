@@ -19,8 +19,6 @@ window.scrollTo({
 });
 
 /*validación del formulario*/
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
   
@@ -39,3 +37,6 @@ window.scrollTo({
       }, false)
     })
   })()
+
+
+ 
