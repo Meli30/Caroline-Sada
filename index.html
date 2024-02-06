@@ -224,23 +224,32 @@
                   <label for="validationCustom01" class="form-label fs-5 p-1">Nombre</label>
                   <input type="text" class="form-control" id="validationCustom01" required>
                   <div class="valid-feedback fs-6">
-                    Bien!
+                    Excelente.
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingrese su nombre.
                   </div>
                 </div>
                 <div class="col-md-6">
                   <label for="validationCustom02" class="form-label fs-5 p-1">Apellido</label>
                   <input type="text" class="form-control" id="validationCustom02" required>
                   <div class="valid-feedback fs-6">
-                    Bien!
+                    Excelente.
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingrese su apellido.
                   </div>
                 </div>
                 <div class="col-md-12">
                   <label for="validationCustomUsername" class="form-label fs-5 p-1">Email</label>
                   <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername"
+                   <input type="text" class="form-control" id="validationCustomUsername"
                       aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Ingrese su email.
+                      </div>
                   </div>
+                  
                 </div>
                 <div class="col-md-12">
                   <label  for="text" class="fs-5">Dejanos tu mensaje</label>
@@ -250,9 +259,13 @@
                   <div class="form-check">
                     <input class="form-check-input border:none" type="checkbox" id="invalidCheck" required>
                     <label class="form-check-label fs-6" for="invalidCheck">
-                      Acepto los términos y condiciones
+                      Acepto los términos y condiciones.
                     </label>
+                    <div class="invalid-feedback">
+                      Para continuar acepte los términos y condiciones.
+                    </div>
                   </div>
+                 
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn w-100"

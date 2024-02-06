@@ -103,3 +103,8 @@ form{
         display: none;
       }
 }
+
+#text:valid{
+    border-color: #dee2e6;
+    background-image: none;
+}
